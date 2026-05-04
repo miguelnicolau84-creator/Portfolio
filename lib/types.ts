@@ -18,5 +18,6 @@ export type CaseStudy = {
     caption: string;
     aspectRatio?: "wide" | "square" | "tall";
     src?: string;
+    objectPosition?: string;
   }[];
 };

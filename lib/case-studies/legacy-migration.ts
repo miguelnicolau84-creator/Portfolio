@@ -4,8 +4,8 @@ const legacyMigration: CaseStudy = {
   id: "legacy-migration",
   title: "Legacy Migration",
   subtitle: "Unifying seven years of design debt across a platform used by thousands",
-  role: "Design System Lead",
-  year: "2022",
+  role: "UX Lead",
+  year: "2026",
   tags: ["Design Systems", "Strategy", "Platform"],
   intro:
     "A platform-wide initiative to migrate OutSystems' fragmented, multi-system design landscape into a single, token-based design system — without breaking thirty-plus product teams in the process.",

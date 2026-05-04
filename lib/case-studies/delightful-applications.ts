@@ -4,8 +4,8 @@ const delightfulApplications: CaseStudy = {
   id: "delightful-applications",
   title: "Delightful Applications",
   subtitle: "Proving that enterprise software can be powerful and delightful at once",
-  role: "Design Director",
-  year: "2024",
+  role: "UX Lead",
+  year: "2023",
   tags: ["Strategy", "Craft", "Design Culture"],
   intro:
     "A leadership-sponsored initiative to redefine what design quality means for an enterprise platform — and to prove, through concrete work, that functional and delightful are not in opposition.",

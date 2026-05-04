@@ -143,13 +143,20 @@ export default async function CaseStudyPage({ params }: Props) {
                       {visualsAfterThisSection.map((visual, vIndex) =>
                         visual.src ? (
                           <figure key={vIndex} className="my-0">
-                            <Image
-                              src={visual.src}
-                              alt={visual.caption}
-                              width={1600}
-                              height={900}
-                              className="w-full rounded-sm object-cover"
-                            />
+                            <div className={`w-full overflow-hidden rounded-sm ${
+                              visual.aspectRatio === "square" ? "aspect-square" :
+                              visual.aspectRatio === "tall" ? "aspect-[3/4]" :
+                              "aspect-[16/9]"
+                            }`}>
+                              <Image
+                                src={visual.src}
+                                alt={visual.caption}
+                                width={1600}
+                                height={900}
+                                className="w-full h-full object-cover"
+                                style={{ objectPosition: visual.objectPosition ?? "center" }}
+                              />
+                            </div>
                             {visual.caption && (
                               <figcaption className="mt-3 text-sm font-sans text-stone-400 dark:text-stone-500 leading-relaxed">
                                 {visual.caption}

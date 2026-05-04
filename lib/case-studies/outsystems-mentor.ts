@@ -56,33 +56,34 @@ const outsystemsMentor: CaseStudy = {
     {
       afterSection: "Approach",
       caption:
-        "On-site with Petronas teams in Kuala Lumpur, observing how large enterprise developers were using Mentor in real production environments. These sessions surfaced critical gaps in onboarding and scalability that directly influenced our roadmap.",
+        "On-site with Petronas teams in Kuala Lumpur, observing how large enterprise developers were using Mentor in real production environments. These sessions directly influenced our roadmap.",
       aspectRatio: "wide",
-      src: "/case-studies/outsystems-mentor/petronas-kuala-lumpur.png",
+      src: "/case-studies/outsystems-mentor/petronas.png",
+      objectPosition: "center 60%",
     },
     {
       afterSection: "Approach",
       caption:
-        "Partnering with Thermo Fisher teams in California to understand the types of enterprise projects they were building, ensuring Mentor's evolution aligned with real customer needs and could deliver meaningful value at scale.",
+        "On-site with Thermo Fisher teams in California to understand the types of enterprise projects they were building, ensuring alignment for our solution and roadmap.",
       aspectRatio: "wide",
+      src: "/case-studies/outsystems-mentor/thermofisher.jpg",
+      objectPosition: "center 40%",
     },
     {
       afterSection: "Approach",
       caption:
-        "Facilitating an executive feedback session in London with senior stakeholders. These conversations shaped how we positioned Mentor internally and ensured alignment between product, business, and customer expectations.",
+        "Facilitating an executive feedback session in London with senior stakeholders. These conversations shaped how we positioned Mentor internally and ensured alignment with customer expectations.",
       aspectRatio: "wide",
-    },
-    {
-      afterSection: "Approach",
-      caption:
-        "Running live demos with developers in São Paulo, Brasil, capturing real-world feedback to inform global product direction.",
-      aspectRatio: "wide",
+      src: "/case-studies/outsystems-mentor/london_odc_executive.jpeg",
+      objectPosition: "center 10%",
     },
     {
       afterSection: "Approach",
       caption:
         "Hundreds of developers engaged with us throughout the day in São Paulo, creating a continuous stream of feedback and insights.",
       aspectRatio: "wide",
+      src: "/case-studies/outsystems-mentor/saopaulo-1.jpeg",
+      objectPosition: "center 60%",
     },
   ],
 };
