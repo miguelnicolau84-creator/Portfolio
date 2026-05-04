@@ -144,13 +144,20 @@ export default async function CaseStudyPage({ params }: Props) {
                         visual.src ? (
                           <figure key={vIndex} className="my-0">
                             {visual.naturalSize ? (
-                              <Image
-                                src={visual.src}
-                                alt={visual.caption}
-                                width={1600}
-                                height={900}
-                                className="w-full h-auto rounded-sm"
-                              />
+                              <div className="w-1/2 mx-auto">
+                                <Image
+                                  src={visual.src}
+                                  alt={visual.caption}
+                                  width={1600}
+                                  height={900}
+                                  className="w-full h-auto rounded-sm"
+                                />
+                                {visual.caption && (
+                                  <figcaption className="mt-3 text-sm font-sans text-stone-400 dark:text-stone-500 leading-relaxed">
+                                    {visual.caption}
+                                  </figcaption>
+                                )}
+                              </div>
                             ) : (
                             <div className={`w-full overflow-hidden rounded-sm ${
                               visual.aspectRatio === "square" ? "aspect-square" :
@@ -167,7 +174,7 @@ export default async function CaseStudyPage({ params }: Props) {
                               />
                             </div>
                             )}
-                            {visual.caption && (
+                            {!visual.naturalSize && visual.caption && (
                               <figcaption className="mt-3 text-sm font-sans text-stone-400 dark:text-stone-500 leading-relaxed">
                                 {visual.caption}
                               </figcaption>

@@ -34,10 +34,9 @@ export default function Home() {
                   scaling products in engineering-heavy environments.
                 </p>
                 <p>
-                  I&apos;ve led teams of ~10 designers across platform and
+                  I&apos;ve led teams of designers across platform and
                   AI-driven products. Working with Product, Engineering, and AI
-                  leadership to define strategy, align organisations and deliver
-                  systems at scale.
+                  leadership to define strategy and deliver systems at scale.
                 </p>
               </div>
             </div>
@@ -58,7 +57,7 @@ export default function Home() {
           </div>
 
           {/* Below the grid: CTA only */}
-          <div className="mt-12 pt-10 border-t border-stone-200 dark:border-stone-800">
+          <div className="mt-6">
             <Link
               href="/work"
               className="inline-flex items-center gap-2 text-sm font-sans font-medium text-stone-900 dark:text-stone-50 border-b border-stone-900 dark:border-stone-50 pb-0.5 hover:text-stone-500 hover:border-stone-500 dark:hover:text-stone-400 dark:hover:border-stone-400 transition-colors duration-200"
