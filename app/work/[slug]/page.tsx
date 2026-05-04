@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { caseStudies, getCaseStudy } from "@/lib/case-studies";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import type { Metadata } from "next";
@@ -84,16 +85,22 @@ export default async function CaseStudyPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Intro */}
-      <div className="px-6 pt-14 md:pt-20 pb-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="max-w-2xl">
-            <p className="font-serif text-xl md:text-2xl text-stone-700 dark:text-stone-200 leading-[1.6] italic">
-              {cs.intro}
-            </p>
+      {/* Video embed */}
+      {cs.videoUrl && (
+        <div className="px-6 pt-6 pb-2">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-stone-100 dark:bg-stone-900">
+              <iframe
+                src={cs.videoUrl}
+                title={`${cs.title} — video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Sections */}
       <div className="px-6 pb-24 md:pb-32">
@@ -133,14 +140,31 @@ export default async function CaseStudyPage({ params }: Props) {
                           : "mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4"
                       }
                     >
-                      {visualsAfterThisSection.map((visual, vIndex) => (
-                        <ImagePlaceholder
-                          key={vIndex}
-                          caption={visual.caption}
-                          aspectRatio={visual.aspectRatio}
-                          className="my-0"
-                        />
-                      ))}
+                      {visualsAfterThisSection.map((visual, vIndex) =>
+                        visual.src ? (
+                          <figure key={vIndex} className="my-0">
+                            <Image
+                              src={visual.src}
+                              alt={visual.caption}
+                              width={1600}
+                              height={900}
+                              className="w-full rounded-sm object-cover"
+                            />
+                            {visual.caption && (
+                              <figcaption className="mt-3 text-sm font-sans text-stone-400 dark:text-stone-500 leading-relaxed">
+                                {visual.caption}
+                              </figcaption>
+                            )}
+                          </figure>
+                        ) : (
+                          <ImagePlaceholder
+                            key={vIndex}
+                            caption={visual.caption}
+                            aspectRatio={visual.aspectRatio}
+                            className="my-0"
+                          />
+                        )
+                      )}
                     </div>
                   )}
                 </section>
