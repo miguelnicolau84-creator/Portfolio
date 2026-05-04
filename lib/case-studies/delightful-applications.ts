@@ -6,7 +6,7 @@ const delightfulApplications: CaseStudy = {
   subtitle: "Proving that enterprise software can be powerful and delightful at once",
   role: "UX Lead",
   year: "2023",
-  tags: ["Strategy", "Craft", "Design Culture"],
+  tags: ["App Experience", "Strategy", "Mobile Apps"],
   intro:
     "A leadership-sponsored initiative to redefine what design quality means for an enterprise platform — and to prove, through concrete work, that functional and delightful are not in opposition.",
   sections: [
@@ -60,16 +60,22 @@ const delightfulApplications: CaseStudy = {
       afterSection: "Context",
       caption: "Benchmarking matrix: 30 products scored across 12 dimensions of interaction quality.",
       aspectRatio: "wide",
+      src: "/case-studies/delightful-apps/delightful1.avif",
+      naturalSize: true,
     },
     {
       afterSection: "Approach",
       caption: "The five principles of enterprise delight — developed from the joy sprint and validated through user research.",
       aspectRatio: "tall",
+      src: "/case-studies/delightful-apps/delightful2.avif",
+      naturalSize: true,
     },
     {
       afterSection: "Outcome",
       caption: "The redesigned flow: before and after the joy sprint, with annotation on the design decisions.",
       aspectRatio: "wide",
+      src: "/case-studies/delightful-apps/delightful3.avif",
+      naturalSize: true,
     },
   ],
 };

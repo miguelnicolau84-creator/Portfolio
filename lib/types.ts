@@ -19,5 +19,6 @@ export type CaseStudy = {
     aspectRatio?: "wide" | "square" | "tall";
     src?: string;
     objectPosition?: string;
+    naturalSize?: boolean;
   }[];
 };
