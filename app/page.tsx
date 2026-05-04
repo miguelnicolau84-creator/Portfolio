@@ -14,9 +14,7 @@ export default function Home() {
       <section className="flex-1 pt-20 pb-24 md:pt-24 md:pb-32 px-6">
         <div className="max-w-5xl mx-auto">
 
-          <p className="text-xs font-sans tracking-widest uppercase text-stone-400 dark:text-stone-500 mb-8 pt-8 md:pt-12">
-            Product Design
-          </p>
+          <div className="pt-8 md:pt-12 mb-8" />
 
           {/* Two-column: name + bio alongside photo */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-12 md:gap-16 items-end">
@@ -30,7 +28,7 @@ export default function Home() {
 
               <div className="space-y-5 text-base leading-[1.75] text-stone-600 dark:text-stone-300 font-sans max-w-lg">
                 <p>
-                  Design leader with 10+ years of experience building and
+                  Product Design leader with 10+ years of experience building and
                   scaling products in engineering-heavy environments.
                 </p>
                 <p>

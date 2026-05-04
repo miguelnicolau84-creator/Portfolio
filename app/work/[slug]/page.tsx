@@ -90,13 +90,22 @@ export default async function CaseStudyPage({ params }: Props) {
         <div className="px-6 pt-6 pb-2">
           <div className="max-w-5xl mx-auto">
             <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-stone-100 dark:bg-stone-900">
-              <iframe
-                src={cs.videoUrl}
-                title={`${cs.title} — video`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-              />
+              {cs.videoUrl.startsWith("/") ? (
+                <video
+                  src={cs.videoUrl}
+                  controls
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              ) : (
+                <iframe
+                  src={cs.videoUrl}
+                  title={`${cs.title} — video`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              )}
             </div>
           </div>
         </div>

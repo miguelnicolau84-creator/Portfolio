@@ -3,75 +3,52 @@ import type { CaseStudy } from "../types";
 const legacyMigration: CaseStudy = {
   id: "legacy-migration",
   title: "Legacy Migration",
-  subtitle: "Unifying seven years of design debt across a platform used by thousands",
-  role: "UX Lead",
+  subtitle: "Unifying a fragmented migration experience across services, teams, and customers",
+  role: "Design Lead",
   year: "2026",
-  tags: ["AI Experience", "Strategy", "Legacy Migration"],
+  tags: ["Design Systems", "Strategy", "Platform"],
   intro:
-    "A platform-wide initiative to migrate OutSystems' fragmented, multi-system design landscape into a single, token-based design system — without breaking thirty-plus product teams in the process.",
+    "Bringing UX into an engineering-led AI research team to design a unified orchestration layer for a complex, multi-service migration journey.",
+  videoUrl: "/case-studies/legacy-migration/legacy-mod.mov",
   sections: [
     {
       heading: "Context",
       body: [
-        "After seven years of rapid product growth, OutSystems' core platform was operating with multiple design systems running in parallel. Different teams had evolved their own component libraries, spacing conventions, and interaction patterns — all with good intentions, none in isolation.",
-        "The result was a product experience that felt inconsistent to users and costly to maintain for teams. Cross-team design collaboration was slow and error-prone. A significant redesign was not an option; the platform was too large, too live, and too critical to customers. We needed a migration strategy.",
+        "As part of a broader Legacy Migration initiative, multiple new services were being developed in parallel to support customers transitioning from older systems. This work was driven by a small, highly focused AI research team exploring new ways to accelerate and enhance the migration experience. I joined the team to bring a UX perspective into an otherwise engineering-led effort.",
+        "While each service addressed a specific need, the overall experience was becoming increasingly fragmented, particularly for partners and customer success teams responsible for guiding customers through the process.",
       ],
     },
     {
       heading: "Challenge",
       body: [
-        "No component was 'safe' to change without impacting five or more product teams. Engineering debt was deep: some components had been in production, unchanged, for six years. And perhaps most significantly, teams had strong attachment to their local patterns — they'd been built with care, under pressure, and they worked.",
-        "The challenge was not just technical. It was organisational. Any migration plan that didn't account for team autonomy, existing roadmaps, and the real cost of adoption would fail regardless of how well-designed the new system was.",
+        "As the number of services grew, there was no unified way to connect them into a coherent experience or support effective interaction between partners, customer success teams, and customers.",
+        "The lack of orchestration across the migration journey made it difficult to deliver a consistent, guided experience and ultimately limited the value these services could provide when combined.",
       ],
     },
     {
       heading: "My Role",
       body: [
-        "I led the migration strategy as Design System Lead. I built and managed a migration team of four designers, ran stakeholder alignment across twelve product teams, and owned the sequencing and communication of the rollout.",
-        "I also served as the primary liaison between the design system team and platform engineering, translating design intent into technical constraints and vice versa throughout the process.",
+        "I led the design of a unified experience within a small, cross-functional AI research team, while also taking a hands-on role in building a functional prototype. Working in close collaboration with engineers, I used AI-assisted development to rapidly translate ideas into a working product.",
+        "This approach enabled faster iteration and tighter feedback loops than a traditional design-to-development handoff.",
       ],
     },
     {
       heading: "Approach",
       body: [
-        "We started with a full component audit across two hundred-plus screens. The findings were clarifying: we had eighty-seven distinct button variants across the product. The audit gave us a shared language for the problem — teams could see, concretely, what fragmentation looked like at scale.",
-        "From the audit, we built a migration cost matrix — prioritising components by impact, technical risk, and adoption readiness. High-impact, low-risk components were migrated first to build momentum and demonstrate value before tackling the harder, higher-risk work.",
-        "We introduced a shadow DOM approach that allowed teams to adopt new components incrementally, without breaking existing functionality. Weekly office hours, a public migration guide, and a Slack-based support channel were as important as the technical infrastructure.",
+        "I began by mapping the full service ecosystem, identifying key actors, touchpoints, and gaps across the migration journey. This process surfaced a critical orchestration gap: while individual services existed, there was no connective layer to turn them into a usable, end-to-end experience.",
+        "I designed a unified interface that aggregates and contextualises services, enables partner and customer success teams to engage directly with customers, and guides interactions based on each customer's stage in the migration journey.",
+        "To validate the concept, I built a working prototype using AI-assisted coding, integrated directly into the development workflow, allowing for real-time iteration alongside engineers and reducing reliance on static design deliverables.",
       ],
     },
     {
       heading: "Outcome",
       body: [
-        "Seventy percent of the platform was migrated within eight months. Component duplication dropped by 65%. The average component-to-page ratio fell from 3.1 to 1.4 — a concrete measure of teams reusing rather than rebuilding.",
-        "More importantly, the migration established a new working model. Teams that had been designing in isolation were now contributing to a shared system. The design system went from being a centrally maintained artifact to a genuinely collaborative platform.",
-      ],
-    },
-    {
-      heading: "Key Takeaways",
-      body: [
-        "Migration is a change management problem before it's a design problem. The technical decisions were difficult. The organisational ones were harder. Team buy-in required sustained investment — not a single launch announcement.",
-        "Visibility of the problem was essential to progress. The component audit didn't just inform the strategy; it created alignment. Showing teams the scale of fragmentation was more persuasive than any proposal document.",
-        "Communication rituals matter enormously. The weekly office hours and the public guide weren't support mechanisms — they were adoption mechanisms. Teams that felt supported adopted early. Teams that didn't, waited.",
+        "The prototype demonstrated how a unified orchestration layer could reduce fragmentation, improve the clarity and effectiveness of partner and customer interactions, and accelerate alignment between design and engineering.",
+        "It also highlighted a more integrated way of working, where design and implementation evolve together, significantly shortening the distance between concept and execution.",
       ],
     },
   ],
-  visualSlots: [
-    {
-      afterSection: "Context",
-      caption: "A fragment of the component audit: three teams, three button systems, zero shared tokens.",
-      aspectRatio: "wide",
-    },
-    {
-      afterSection: "Approach",
-      caption: "The migration cost matrix — organising 200+ components by impact, risk, and team readiness.",
-      aspectRatio: "wide",
-    },
-    {
-      afterSection: "Outcome",
-      caption: "Before and after: the platform's component library, six months apart.",
-      aspectRatio: "square",
-    },
-  ],
+  visualSlots: [],
 };
 
 export default legacyMigration;
