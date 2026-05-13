@@ -1,4 +1,4 @@
-import type { CaseStudy } from "../types";
+import type { CaseStudy } from "@/lib/types";
 
 const delightfulApplications: CaseStudy = {
   id: "delightful-applications",

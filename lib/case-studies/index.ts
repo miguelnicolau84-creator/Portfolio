@@ -1,7 +1,7 @@
 import outsystemsMentor from "./outsystems-mentor";
 import legacyMigration from "./legacy-migration";
 import delightfulApplications from "./delightful-applications";
-import type { CaseStudy } from "../types";
+import type { CaseStudy } from "@/lib/types";
 
 export const caseStudies: CaseStudy[] = [
   outsystemsMentor,
